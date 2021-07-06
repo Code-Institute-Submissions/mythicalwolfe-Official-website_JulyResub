@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,104 +28,49 @@
         outline: none;
         cursor: pointer;
       }
+      #icon{
+        width: 10px;
+        height: 10px;
+      }
       </style>
       <script>
         const btnscrolltotop= document.queryselector("#btnscrolltotop");
         btnscrolltotop.addeventlistener("click", function (){
           window.scrollto(0, 0);
         })
-                  
-!(function(d){
-  var itemClassName = "carousel__photo";
-      items = d.getElementsByClassName(itemClassName),
-      totalItems = items.length,
-      slide = 0,
-      moving = true; 
-  function setInitialClasses() {
 
-    items[totalItems - 1].classList.add("prev");
-    items[0].classList.add("active");
-    items[1].classList.add("next");
-  }
+        var slideIndex = 1;
+showSlides(slideIndex);
 
-  function setEventListeners() {
-    var next = d.getElementsByClassName('carousel__button--next')[0],
-        prev = d.getElementsByClassName('carousel__button--prev')[0];
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-    next.addEventListener('click', moveNext);
-    prev.addEventListener('click', movePrev);
-  }
-  function disableInteraction() {
-    moving = true;
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-    setTimeout(function(){
-      moving = false
-    }, 500);
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
   }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+       </script>
 
-  function moveCarouselTo(slide) {
-
-    if(!moving) {
-      disableInteraction();
-      var newPrevious = slide - 1,
-          newNext = slide + 1,
-          oldPrevious = slide - 2,
-          oldNext = slide + 2;
-      if ((totalItems - 1) > 3) {
-        if (newPrevious <= 0) {
-          oldPrevious = (totalItems - 1);
-        } else if (newNext >= (totalItems - 1)){
-          oldNext = 0;
-        }
-        if (slide === 0) {
-          newPrevious = (totalItems - 1);
-          oldPrevious = (totalItems - 2);
-          oldNext = (slide + 1);
-        } else if (slide === (totalItems -1)) {
-          newPrevious = (slide - 1);
-          newNext = 0;
-          oldNext = 1;
-        }
-        items[oldPrevious].className = itemClassName;
-        items[oldNext].className = itemClassName;
-        items[newPrevious].className = itemClassName + " prev";
-        items[slide].className = itemClassName + " active";
-        items[newNext].className = itemClassName + " next";
-      }
-    }
-  }
-  function moveNext() {
-    if (!moving) {
-      if (slide === (totalItems - 1)) {
-        slide = 0;
-      } else {
-        slide++;
-      }
-      moveCarouselTo(slide);
-    }
-  }
-  function movePrev() {
-    if (!moving) {
-      if (slide === 0) {
-        slide = (totalItems - 1);
-      } else {
-        slide--;
-      }
-      moveCarouselTo(slide);
-    }
-  }
-  function initCarousel() {
-    setInitialClasses();
-    setEventListeners();
-    moving = false;
-  }
-  initCarousel();
-
-}(document));
-          
-            </script>
-    </head>
+</head>
         <body>
+    
+
             <form> <button type="submit" id="btnscrolltotop">
                 <i class="material-icon">Top</i>
               </button>
@@ -146,19 +91,40 @@
     <span>Your browser doesn't support this file.</span>
 </audio>
 <h1>Snapshot photos</h1>
-<div class="carousel-wrapper">
-  <div class="carousel">    
-      <img class="carousel__photo initial" src="Artwork/Board-background-1.jpg" alt="your browser doesn't support this image.">
-    <img class="carousel__photo" src="Artwork/boardbackground2.jpg" alt="Your browser doesn't support this image.">
-    <img class="carousel__photo" src="Artwork/boardbackground3.jpg" alt="Your browser doesn't support this image.">
-<!-- Carousel photos are placeholders, this will be used as a snapshot slideshow in the future -->
-      
-    <div class="carousel__button--next"></div>
-    <div class="carousel__button--prev"></div> 
-   </div>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="Artwork/Board-background-1.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="Artwork/boardbackground2.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="Artwork/boardbackground3.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
 </div>
-</div>
+
 <h1>Updates and Release dates</h1>
 <p>
   Initial beta release for the card game version is around December 2021, while currently it is only a beta and has limited features future plans involve new Customisable Card decks, Market place and new Character cards.
@@ -175,6 +141,8 @@
   <nav>
       <ul>
           <li>Features here will be added in the future!</li>
+          <li id="#icon"><a href="https://www.facebook.com/talesofrievara/" target="_blank" alt="Your browser doesn't support this image."><img src="Artwork/Facebook_icon.jpg"></a></li>
+         
           <!-- Ths has been placed as a precursor for future social medias and is not being used for the project as of this current date. It has also been used to create an outline border to the page.-->
       </ul>
   </nav>
