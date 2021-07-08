@@ -10,7 +10,7 @@
      $txt = "You have recieved an email from ".$name.".\n\n".$message;
 
      mail($mailTo, $subject, $txt, $headers);
-     header("Location: contact.html?mailsend");
+     header("Location: contactform.php?mailsend");
 
  }  
 

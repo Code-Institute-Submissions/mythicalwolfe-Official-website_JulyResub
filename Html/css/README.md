@@ -1,4 +1,4 @@
-# project1
+# project 2 official website
 In this project i plan to revive or rather reinstate a website around an idea i created back in 2019.
 
 My plan is to use my website to help bring a following and a small fan base towards the game i'm striving to build.
@@ -12,7 +12,7 @@ More pages such as the Gallery and Contact page include the information relevant
 
 I must also add that all Artwork i've used was purchased or given permission to use and all original artists have been credited and will be expanded upon in the contact page. 
 
-Further more, during the start of my code i failed to commit regularly and with messages attached, this was simply because i had'nt realised control +s didnt do the same function. While this is bad on my part for failing to keep information updated and uploaded i want to make it known my work is not Plagerised and it was only a misunderstanding on my part.
+
 
 Finally, i'd like to make a note that although i'm uploading my original code as a portfolio, that all rights to the website and the game included in my second portfolio belong to me and cannot be used elsewhere by others. I only say this as i've invested into this project and im concerned the original copy could be used by someone else, therefore I am stating that this project although submitted to the code institute solely belongs to myself and is not in any way to be used by others.
 

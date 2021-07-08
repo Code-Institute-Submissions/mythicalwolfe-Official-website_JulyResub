@@ -5,16 +5,10 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Tales of Rievara</title>
      <link rel="stylesheet" href="css/style.css">
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-     rel="stylesheets">
+     
      <style>
-         div{color:black}
-         p{color:black}
-        strong{color:red;
-        font-size:24px;}
-        bold{color:red; 
-        font-size:24px;}
-        #btnscrolltotop {
+          
+ #btnscrolltotop {
         position: fixed;
         right : 10px;
         bottom: 100px;
@@ -27,50 +21,10 @@
         border: none ;
         outline: none;
         cursor: pointer;
-      }
-      #icon{
-        width: 10px;
-        height: 10px;
-      }
+      } 
       </style>
-      <script>
-        const btnscrolltotop= document.queryselector("#btnscrolltotop");
-        btnscrolltotop.addeventlistener("click", function (){
-          window.scrollto(0, 0);
-        })
-
-        var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-       </script>
-
-</head>
+      </head>
         <body>
-    
-
             <form> <button type="submit" id="btnscrolltotop">
                 <i class="material-icon">Top</i>
               </button>
@@ -84,6 +38,7 @@ function showSlides(n) {
                     <li><a href="Update.html">Updates</a></li>
                </ul>
             </nav>
+            <!-- Image and Audio controls-->
                <img id="Banner" src="Artwork/tales of rievara.jpg" alt="your browser doesnt support this image" >
               <br>
                <audio controls 
@@ -112,9 +67,9 @@ function showSlides(n) {
     <div class="text">Caption Three</div>
   </div>
 
-  <!-- Next and previous buttons -->
+  <!-- Next and previous buttons posible future additions, not implemented for this project!
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
 </div>
 <br>
 
@@ -136,6 +91,40 @@ function showSlides(n) {
   <h1>Below will hold a list of every update before and after release</h1>
   Updates are currently unavailable and will be scheduled at a later date, thank you for your patience.
 </p>
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  
+  const btnscrolltotop= document.queryselector("#btnscrolltotop");
+          btnscrolltotop.addeventlistener("click", function (){
+            window.scrollto(0, 0);
+          })
+         
+       </script>
 </body>
 <footer>
   <nav>
