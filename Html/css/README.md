@@ -12,8 +12,12 @@ More pages such as the Gallery and Contact page include the information relevant
 
 I must also add that all Artwork i've used was purchased or given permission to use and all original artists have been credited and will be expanded upon in the contact page. 
 
+While creating the form, it doesn't load or rather send information to the desired location. this is due to not hosting a live site instead of a local host. while the form loads and functions it doesn't send information to an email address and loads a 501 httpstatus not found. With this, the form must be loaded in a local file so it doesnt load the css file connected to the form.
 
+Furthermore, I have added a update page with a carousel to show people updates and sneak peaks to new game features etc. we have also added new social media logos on the bottom of the screen in the footer, while some are connected directly others only go to the site instead of a profile. 
 
-Finally, i'd like to make a note that although i'm uploading my original code as a portfolio, that all rights to the website and the game included in my second portfolio belong to me and cannot be used elsewhere by others. I only say this as i've invested into this project and im concerned the original copy could be used by someone else, therefore I am stating that this project although submitted to the code institute solely belongs to myself and is not in any way to be used by others.
+Finally, i'd like to make a note that although i'm uploading my original code as a portfolio, that all rights to the website and the game included in my second portfolio belong to Mythical Industries. and cannot be used elsewhere by others. I only say this as i've invested into this project and im concerned the original copy could be used by someone else, therefore I am stating that this project although submitted to the code institute solely belongs to myself and is not in any way to be used by others.
+
+Mythical Industries is a company run by myself. 
 
 Thank you

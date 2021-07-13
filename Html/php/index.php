@@ -10,6 +10,12 @@
    
      
 <body>
+<img id="Banner" src="Artwork/tales of rievara.jpg" alt="your browser doesnt support this image" >
+           <div id="Contact">
+               <audio controls 
+            src="media/Music.mp3" >
+    <span>Your browser doesn't support this file.</span>
+</audio>
     <main>
 <form class="contact-form" action="contactform.php" method="post">
                        <input type="text" name="name" placeholder="Full name">
