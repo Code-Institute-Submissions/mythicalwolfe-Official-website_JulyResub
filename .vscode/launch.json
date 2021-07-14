@@ -8,7 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Open home.html",
-            "file": "/workspace/Official-website/index.html"
+            "file": "/workspace/Official-website/.vscode/index.html"
         }
     ]
 }
