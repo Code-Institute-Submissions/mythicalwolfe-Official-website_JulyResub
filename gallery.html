@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Tales of Rievara</title>
+     <link rel="stylesheet" href="css/style.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+     rel="stylesheets">
+     <style>
+         /* Button style allowing the button to function due to css issues */
+        #btnscrolltotop {
+        position: fixed;
+        right : 10px;
+        bottom: 100px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background:red;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        color: white ;
+        border: none ;
+        outline: none;
+        cursor: pointer;
+      }
+      </style>
+      <script>
+        /* button scroll to top java event */
+        const btnscrolltotop= document.queryselector("#btnscrolltotop");
+        btnscrolltotop.addeventlistener("click", function (){
+          window.scrollto(0, 0);
+        })
+
+      </script>
+    </head>
+    <body>
+        <!-- button scroll to top function -->
+        <form> <button type="submit" id="btnscrolltotop">
+            <i class="material-icon">Top</i>
+          </button>
+         </form>
+        <nav>
+            <ul>
+              <!-- Navigation bar linking the other pages -->
+               <li><a href="home.html">Home</a></li>
+               <li><a href="how-to-play.html">How to Play</a></li>
+               <li><a href="gallery.html"> Gallery </li>
+                <li><a href="contact.html">Contact</a></li>
+                 <li><a href="update.html">Updates</a></li>
+           </ul>
+        </nav> 
+        <!-- Banner and audio features -->
+           <img id="Banner" src="assets/Artwork/tales of rievara.jpg" alt="your browser doesnt support this image, Image display of the banner related to the series" >
+           <div id="Contact">
+               <audio controls 
+            src="assets/media/Music.mp3" >
+    <span>Your browser doesn't support this file. Celtic style music giving off an enchanted essence and atmosphere.</span>
+</audio>
+             
+        <h1><bold>Gallery</bold></h1>
+        <nav>
+            <ul>
+                <li><a href="#Sprite-Concept">Sprites</a></li>
+                <li><a href="#Character-art">Character Concepts</a></li>
+                <li><a href="#Banner">Official Art</a></li>
+               
+            </ul>
+        </nav>
+        <!-- Section 1 of the gallery display, carousel goes here in future update -->
+        <div id="Sprite-Concept">
+            <h1><bold>Sprites</bold></h1>
+            <p>
+                In this section you'll find images of item cards assembled along with a full sprite sheet.
+                <br>
+                <!-- div style to centralise initial photo -->
+                <div id="#div">
+                    <img id="image" src="assets/Artwork/battleaxe.jpg" alt="Your browser doesn't support this image, this image shows the templated card using the axe sprite.">
+                </div>
+                <img id="image" src="assets/Artwork/GOBLET.jpg" alt="Your browser doesn't support this image, this image shows the templated card using the goblet sprite.">
+                <img id="image" src="assets/Artwork/steelplatedarmor.jpg" alt="Your browser doesn't support this image, this image shows the templated card for steel armour.">
+            </p>
+
+        </div>
+        <!-- section 2 shows blacks art work and displays 2 of 6 current character concepts -->
+        <div id="Character-art">
+            <h1><bold>Characacters</bold></h1>
+            <p>
+             Currently we don't have the official characters fully designed, however we have the original concept art used for the banner!
+             
+                 <div id="#div"><img id="image" src="assets/Artwork/Kinvar.png" alt="Your browser doesn't support this image, this image displays the Dwarven character Kinvar and his concept art.">
+            <p> Concept art of Kinvar Hudor during his initial creation phase.</p>  </div>
+
+             <img id="image" src="assets/Artwork/Dartonix.png" alt="Your browser doesn't support this image, this image displays the dragonix character Dartonix and his concept art.">
+<p> Concept art of Dartonix during initial designing, this is not yet an official design.</p>
+            </p>
+        </div>
+        <!-- section 3 displays official artwork used for the site -->
+        <div id="Banner">
+            <h1><bold>Official Artwork</bold></h1>
+            <p>
+Here is the official banner used on the website and the logo used for the facebook!
+<br>
+<img id="image" src="assets/Artwork/tales of rievara.jpg" alt="Your browser doesn't support this image, this image displays the official series banner.">
+<img id="image" src="assets/Artwork/Logo.png" alt="Your browser doesn't support this image, this image displays the first Logo design created for the series.">
+            </p>
+        </div>
+    </body>
+    <!-- Navigation for the footer logos and source links-->
+<nav>
+    <ul>
+        <li id="#icon"><a href="https://www.instagram.com/accounts/login/" target="_blank" alt="Your browser doesn't support this image, this image is the Instagram logo."><img src="assets/Artwork/Instagram_icon.jpg"></a></li>
+        <li id="#icon"><a href="https://www.facebook.com/talesofrievara/" target="_blank" alt="Your browser doesn't support this image, this image is the Facebook logo and directly takes you to our social media page."><img src="assets/Artwork/Facebook_icon.jpg"></a></li>
+       <li id="#icon"><a href="https://twitter.com/login?lang=en-gb" target="_blank" alt="Your browser doesn't support this image, this image displays the Twitter logo."><img src="assets/Artwork/Twitter_icon.jpg"></a></li>
+       <li id="#icon"><a href="https://twitter.com/login?lang=en-gb" target="_blank" alt="Your browser doesn't support this image, this image displays the Fiverr logo and takes you directly to the freelance UK site."><img src="assets/Artwork/fiverr_logo.jpg"></a></li>
+       <li id="#icon"><a href="https://www.patreon.com/" target="_blank" alt="Your browser doesn't support this image, this image is the Patreon logo"><img src="assets/Artwork/patreon-icon.jpg"></a></li>
+       <br>
+       <p>Please note not all social medias currently operate or exist, these will be coming soon!</p>
+        <!-- Ths has been placed as a precursor for future social medias and is not being used for the project as of this current date. It has also been used to create an outline border to the page.-->
+    </ul>
+</nav>
+</html>
