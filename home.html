@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en-UK">
-  <head>
-     <meta charset="utf-8">
+<html>
+    <head>
+        <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Tales of Rievara</title>
      <link rel="stylesheet" href="css/style.css">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
      rel="stylesheets">
      <style>
-      
-      li{color:rgb(207, 32, 32)}
-      #btnscrolltotop {
+         /* Button style allowing the button to function due to css issues */
+        #btnscrolltotop {
         position: fixed;
         right : 10px;
         bottom: 100px;
@@ -24,30 +23,38 @@
         outline: none;
         cursor: pointer;
       }
-    
-     </style>
-     <script>
-       const btnscrolltotop= document.queryselector("#btnscrolltotop");
-       btnscrolltotop.addeventlistener("click", function (){
-         window.scrollto(0, 0);
-       })
-     </script>
-  </head>
-  <body> 
-    <nav>
-    <ul>
-       <li><a href="home.html">Home</a></li>
-       <li><a href="how-to-play.html">How to Play</a></li>
-       <li><a href="Gallery.html"> Gallery </li>
-      <li><a href="contact.html">Contact</a></li>
-       <li><a href="Update.html">Updates</a></li>
-   </ul>
-  </nav>
-    <img src="Artwork/tales of rievara.jpg" alt="your browser doesnt support this image">
-    <br>
-    <audio controls 
-            src="media/Music.mp3" >
-    <span>Your browser doesn't support this file.</span>
+      </style>
+      <script>
+        /* button scroll to top java event */
+        const btnscrolltotop= document.queryselector("#btnscrolltotop");
+        btnscrolltotop.addeventlistener("click", function (){
+          window.scrollto(0, 0);
+        })
+
+      </script>
+    </head>
+    <body>
+        <!-- button scroll to top function -->
+        <form> <button type="submit" id="btnscrolltotop">
+            <i class="material-icon">Top</i>
+          </button>
+         </form>
+        <nav>
+            <ul>
+              <!-- Navigation bar linking the other pages -->
+               <li><a href="home.html">Home</a></li>
+               <li><a href="how-to-play.html">How to Play</a></li>
+               <li><a href="gallery.html"> Gallery </li>
+                <li><a href="contact.html">Contact</a></li>
+                 
+           </ul>
+        </nav> 
+        <!-- Banner and audio features -->
+           <img id="Banner" src="assets/Artwork/tales of rievara.jpg" alt="your browser doesnt support this image, Image display of the banner related to the series" >
+           <div id="Contact">
+               <audio controls 
+            src="assets/media/Music.mp3" >
+    <span>Your browser doesn't support this file. Celtic style music giving off an enchanted essence and atmosphere.</span>
 </audio>
     <h1> Welcome to Tales of Rievara! A Table Top game. </h1>
     <nav>
@@ -58,17 +65,20 @@
        <li><a href="#references">Resources</a></li>
      </ul>
    </nav>
+   <!-- Button scroll to top function/visual -->
    <form> <button type="submit" id="btnscrolltotop">
      <i class="material-icon">Top</i>
    </button>
   </form>
+  <br>
+  <!-- segemnt of code explains how the project began -->
      <div id="beg">
      <p> While the game is only a concept idea, it's planned versions spark a
       variety of different games! The first upcoming version will be a simple
       table top style around cards and 2D characters. </p>
     <p> Before we look into the first version, I will explain a bit about how
       this project has come about and where i plan to take it! </p>
-    <h3 font-size="24px"> The beginning: </h3>
+    <h3> <bold>The beginning:</bold> </h3>
     <p> Tales of <strong>Rievara</strong> first began as a simple dream or
       idea.</p>
     <p> Back in 2018, I decided to create my own concept of a game that at the
@@ -91,8 +101,10 @@
       far fetched. 
     </p>
     </div>
+    <br>
+    <!-- segment of code explaining the official start up -->
     <div id="initial">
-      <h3 font-size="24px"> <underline>Initial start:</underline> </h3>
+      <h3> <bold>Initial start:</bold> </h3>
     <p>
       On august 17th 2019, the project took it's initial first step in many to come.
       </p>
@@ -110,26 +122,32 @@
         <li>Terrain designs</li>
       
       </p>
+<br>
     <p>
       These changed have been implemented into the upcoming features, however the quality and graphics side has 
       abandoned a 3D look to the terrain and building style, because of this the style and graphics are being left out of this version and will be included in future updates. 
     </p>
   </div>
+  <!-- segment of code explaining where the project is at currently -->
     <div id="where">
-      <h3>Where we are now!</h3>
+      <h3><bold>Where we are now!</bold></h3>
     <p>
       After 9 months of constant brick walls and difficult challenges the project was revived once again.
       The project however, has changed to cater for a single developer and because of this will start as a small table top.
       </p>
+      <br>
       <p> 
         while the style of game lacks in graphic design and vision unlike the previous draft, it allows for the project to lift off the ground and gain a wider understanding of what and where it will go.
         The projects concepts have stayed the same, with a similar backstory, recreated races and towns with the addition to extra characters and challenges.
         </p>
+        <br>
         <p>
           As of March 28th the project has finally taken a leap forward and developement has begun, while at first this website has taken the first step the game will begin its developement by mid june. 
           The game concept has all been finalised and rules have been established to give people a opportunity to learn before it's release!
           </p>
         </div>
+
+        <!-- this section of the divs seperates references from the project information -->
           <div id="references">
             <p>
             Finally, i'd like to thank those who helped shape part of my idea and helped me forge it into something even greater!
@@ -153,17 +171,17 @@
   Thank you</p>
 </div>
   </body>
-  <nav>
-    <ul>
-        <li id="#icon"><a href="https://www.instagram.com/accounts/login/" target="_blank" alt="Your browser doesn't support this image"><img src="Artwork/Instagram_icon.jpg"></a></li>
-        <li id="#icon"><a href="https://www.facebook.com/talesofrievara/" target="_blank" alt="Your browser doesn't support this image."><img src="Artwork/Facebook_icon.jpg"></a></li>
-       <li id="#icon"><a href="https://twitter.com/login?lang=en-gb" target="_blank" alt="Your browser doesn't support this image."><img src="Artwork/Twitter_icon.jpg"></a></li>
-       <li id="#icon"><a href="https://twitter.com/login?lang=en-gb" target="_blank" alt="Your browser doesn't support this image."><img src="Artwork/fiverr_logo.jpg"></a></li>
-       <li id="#icon"><a href="https://www.patreon.com/" target="_blank" alt="Your browser doesn't support this image."><img src="Artwork/patreon-icon.jpg"></a></li>
-       <br>
-       <p>Please note not all social medias currnetly operate or exist, these will be coming soon!</p>
-        <!-- Ths has been placed as a precursor for future social medias and is not being used for the project as of this current date. It has also been used to create an outline border to the page.-->
-    </ul>
-</nav>
-
-</html>
+    <!-- Navigation for the footer logos and source links-->
+    <nav>
+      <ul>
+          <li id="#icon"><a href="https://www.instagram.com/accounts/login/" target="_blank" alt="Your browser doesn't support this image, this image is the Instagram logo."><img src="assets/Artwork/Instagram_icon.jpg"></a></li>
+          <li id="#icon"><a href="https://www.facebook.com/talesofrievara/" target="_blank" alt="Your browser doesn't support this image, this image is the Facebook logo and directly takes you to our social media page."><img src="assets/Artwork/Facebook_icon.jpg"></a></li>
+         <li id="#icon"><a href="https://twitter.com/login?lang=en-gb" target="_blank" alt="Your browser doesn't support this image, this image displays the Twitter logo."><img src="assets/Artwork/Twitter_icon.jpg"></a></li>
+         <li id="#icon"><a href="https://twitter.com/login?lang=en-gb" target="_blank" alt="Your browser doesn't support this image, this image displays the Fiverr logo and takes you directly to the freelance UK site."><img src="assets/Artwork/fiverr_logo.jpg"></a></li>
+         <li id="#icon"><a href="https://www.patreon.com/" target="_blank" alt="Your browser doesn't support this image, this image is the Patreon logo"><img src="assets/Artwork/patreon-icon.jpg"></a></li>
+         <br>
+         <p>Please note not all social medias currently operate or exist, these will be coming soon!</p>
+          <!-- Ths has been placed as a precursor for future social medias and is not being used for the project as of this current date. It has also been used to create an outline border to the page.-->
+      </ul>
+  </nav>
+  </html>
