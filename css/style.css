@@ -119,7 +119,7 @@ nav li{
 nav a{
     text-decoration: none;
     color: #fff;
-    display: display-box;
+    display: inline-block;
     }
 nav a:hover{
     background-color: #fff;
