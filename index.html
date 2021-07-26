@@ -7,13 +7,8 @@
      <link rel="stylesheet" href="css/style.css">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
      rel="stylesheets">
-     
      <style>
-        div{background-color: #4a4a4f;
-            text-decoration: none;
-    color: #fff;
-    display: block-elements;
-        }
+         /* Button style allowing the button to function due to css issues */
         #btnscrolltotop {
         position: fixed;
         right : 10px;
@@ -29,46 +24,71 @@
         cursor: pointer;
       }
       </style>
-      
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+      <script>
+        /* button scroll to top java event */
+        const btnscrolltotop= document.queryselector("#btnscrolltotop");
+        btnscrolltotop.addeventlistener("click", function (){
+          window.scrollto(0, 0);
+        })
+        </script> 
+      <!-- Code for js functions, this feature is implemented later on for project 2  
+<script src="https://code.jquery.com/jquery-3.3.1.min.js">
       </script>
       <script src="javascript/app.js"></script>
       <script src="javascript/home.js"></script>
       <script src="javascript/common.js"></script>
+      -->
     </head>
-    <body> 
-        <nav>
-        <ul>
-           <li><a href="home.html">Home</a></li>
-           <li><a href="how-to-play.html">How to Play</a></li>
-           <li><a href="Gallery.html"> Gallery </li>
-          <li><a href="contact.html">Contact</a></li>
-           <li><a href="Update.html">Updates</a></li>
-       </ul>
-      </nav>
-        <img src="Artwork/tales of rievara.jpg" alt="your browser doesnt support this image">
+   
+    <body>
+         <header>
+        <nav id="#nav">
+            <ul>
+              <!-- Navigation bar linking the other pages -->
+               <li><a href="home.html">Home</a></li>
+               <li><a href="how-to-play.html">How to Play</a></li>
+               <li><a href="gallery.html"> Gallery </li>
+               <li><a href="contact.html">Contact</a></li>
+           </ul>
+        </nav>
+    </header>
+        <!-- button scroll to top function -->
+        <form> <button type="submit" id="btnscrolltotop">
+            <i class="material-icon">Top</i>
+          </button>
+         </form>
         <br>
-        <audio controls 
-                src="media/Music.mp3" >
-        <span>Your browser doesn't support this file.</span>
-    </audio>
+        <br>
+        <br>
+        
+        <!-- Banner and audio features -->
+           <img id="banner" src="assets/Artwork/tales of rievara.jpg" alt="your browser doesnt support this image, Image display of the banner related to the series" >
+          
+               <audio controls 
+            src="assets/media/Music.mp3" >
+    <span>Your browser doesn't support this file. Celtic style music giving off an enchanted essence and atmosphere.</span>
+</audio>
+    
+<!-- Promotion bar functions (not fully implemented yet)-->
     <div id="promobar">
         <div style="display:box;"> The first of many projects to come</div>
         <div style="display:box;"> Tales of Rievara card game coming soon!</div>
         <div style="display:box;"> Mythical Industries set to launch 2 new games by Christmas 2021</div>
     </div>
+    <!-- This section is for the initial title -->
         <h1> Welcome to Tales of Rievara! A game created by Mythical Industries. </h1>
         
        </body>
-       <nav>
+        <!-- Navigation for the footer logos and source links-->
+    <nav>
         <ul>
-            <li id="#icon"><a href="https://www.instagram.com/accounts/login/" target="_blank" alt="Your browser doesn't support this image"><img src="Artwork/Instagram_icon.jpg"></a></li>
-            <li id="#icon"><a href="https://www.facebook.com/talesofrievara/" target="_blank" alt="Your browser doesn't support this image."><img src="Artwork/Facebook_icon.jpg"></a></li>
-           <li id="#icon"><a href="https://twitter.com/login?lang=en-gb" target="_blank" alt="Your browser doesn't support this image."><img src="Artwork/Twitter_icon.jpg"></a></li>
-           <li id="#icon"><a href="https://twitter.com/login?lang=en-gb" target="_blank" alt="Your browser doesn't support this image."><img src="Artwork/fiverr_logo.jpg"></a></li>
-           <li id="#icon"><a href="https://www.patreon.com/" target="_blank" alt="Your browser doesn't support this image."><img src="Artwork/patreon-icon.jpg"></a></li>
+            <li id="#icon"><a rel="noopener" rel="noreferrer" href="https://www.instagram.com/accounts/login/" target="_blank" alt="Your browser doesn't support this image, this image is the Instagram logo."><img src="assets/Artwork/Instagram_icon.jpg"></a></li>
+            <li id="#icon"><a rel="noopener" rel="noreferrer" href="https://www.facebook.com/talesofrievara/" target="_blank" alt="Your browser doesn't support this image, this image is the Facebook logo and directly takes you to our social media page."><img src="assets/Artwork/Facebook_icon.jpg"></a></li>
+           <li id="#icon"><a rel="noopener" rel="noreferrer" href="https://twitter.com/login?lang=en-gb" target="_blank" alt="Your browser doesn't support this image, this image displays the Twitter logo."><img src="assets/Artwork/Twitter_icon.jpg"></a></li>
+           <li id="#icon"><a rel="noopener" rel="noreferrer" href="https://twitter.com/login?lang=en-gb" target="_blank" alt="Your browser doesn't support this image, this image displays the Fiverr logo and takes you directly to the freelance UK site."><img src="assets/Artwork/fiverr_logo.jpg"></a></li>
+           <li id="#icon"><a rel="noopener" rel="noreferrer" href="https://www.patreon.com/" target="_blank" alt="Your browser doesn't support this image, this image is the Patreon logo"><img src="assets/Artwork/patreon-icon.jpg"></a></li>
            <br>
-           <p>Please note not all social medias currnetly operate or exist, these will be coming soon!</p>
+           <p>Please note not all social medias currently operate or exist, these will be coming soon!</p>
             <!-- Ths has been placed as a precursor for future social medias and is not being used for the project as of this current date. It has also been used to create an outline border to the page.-->
         </ul>
     </nav>
